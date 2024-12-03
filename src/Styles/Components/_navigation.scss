@@ -1,0 +1,15 @@
+.navigation {
+    ul{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        transition: 0.2s;
+        cursor: pointer;
+        
+
+    }
+
+}

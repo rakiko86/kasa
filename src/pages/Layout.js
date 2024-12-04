@@ -1,10 +1,13 @@
 import React from 'react';
-import Navigation from '../Components/Layout/SubComponents/Navigation';
+import Banner from '../Components/Banner';
+import Logo from '../Components/Logo';
+
 
 const Layout = () => {
     return (
         <div>
-            <Navigation/>
+            <Logo/>
+            <Banner/>
         <h1>Accueil</h1>
         </div>
     );

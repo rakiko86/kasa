@@ -1,0 +1,26 @@
+.navigation {
+    ul{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        transition: 0.2s;
+        cursor: pointer;
+        
+
+    }
+.nav-active{
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        right:50%;
+        transform: translatex (-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        
+        
+    }
+}
+}

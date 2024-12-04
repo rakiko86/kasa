@@ -1,11 +1,14 @@
 import React from 'react';
-import Navigation from '../Components/Layout/SubComponents/Navigation';
 import { aboutList } from '../assets/data/aboutData';
+import Logo from '../Components/Logo';
+import Banner from '../Components/Banner';
+
 
 const About = () => {
     return (
         <div>
-             <Navigation/>
+          <Logo/>
+             <Banner/>
              <h1>A Propos</h1>
              {aboutList.map((item, index) => (
         <div key={index} className="about-item">

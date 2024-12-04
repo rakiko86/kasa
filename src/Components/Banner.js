@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const Banner = () => {
     return (
-        <div className='navigation'>
+        <div className='Banner'>
             <ul>
-                <NavLink to="/">
+                <NavLink to="/" className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                 <li>Accueil </li>
                 </NavLink>
-                <NavLink to="/about">
+                <NavLink to="/about"className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                 <li>A Propos</li>
                 </NavLink>
             </ul>
@@ -17,4 +17,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default Banner;

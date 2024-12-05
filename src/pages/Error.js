@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
+import Logo from '../Components/Logo';
 
 const Error = () => {
     return (
         <div>
+            <Logo/>
+
             <Banner />
             <img src="/404.png" alt="error" />
             <p>Oops! La page que vous demandez n'existe pas.</p>

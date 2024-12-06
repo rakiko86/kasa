@@ -9,11 +9,17 @@ const About = () => {
         <div>
           <Logo/>
              <Banner/>
-             <h1>A Propos</h1>
+             
              {aboutList.map((item, index) => (
         <div key={index} className="about-item">
-          <h3>{item.title}</h3>
-          <p>{item.content}</p>
+          <details>
+            <summary>
+            {item.title}
+            
+            </summary>
+            {item.content}
+            </details>
+          
         </div>
       ))}
            

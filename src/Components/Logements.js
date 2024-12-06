@@ -1,15 +1,29 @@
-import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Card from './Card';
 
 const Logements = () => {
-    // Le useEffect se joue lorsque le composant est monté
-
-    useEffect (()=> {
-axios.get("") .then((response)=>console.log(response.data))
-    },[])
+    const [data, setData]= useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            // Récupérer les données du fichier JSON
+            const response = await fetch('/src/Data/loge.json');
+            const data = await response.json();
+            
+            // Utilisez les données récupérées ici
+            setData(data);
+          };
+      
+          fetchData();
+    }, []);
+    
     return (
         <div>
-        <h1>Logements</h1> 
+            
+            <ul> {data.map((logement)=>(
+                
+                <Card key={logement.id} logement={logement} />
+            ))}
+                </ul> 
         </div>
     );
 };

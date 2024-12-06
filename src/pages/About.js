@@ -2,6 +2,7 @@ import React from 'react';
 import { aboutList } from '../assets/data/aboutData';
 import Logo from '../Components/Logo';
 import Banner from '../Components/Banner';
+import Footer from '../Components/Footer';
 
 
 const About = () => {
@@ -21,9 +22,10 @@ const About = () => {
             </details>
           
         </div>
+        
       ))}
            
-           
+          <Footer/> 
 
         </div>
     );

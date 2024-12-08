@@ -19,17 +19,18 @@ const Logements = () => {
     return (
         <div className='logement'>
             <div className='card-container'>
-                <ul>
-                    {data.map((logement) => (
-                         <li key={logement.id}>{logement.title}
-                    
-                    <img src={logement.cover} alt={logement.title}   />
+              
                 
-                             <Card logement={logement} />
-                            
-                        </li>
-                    ))}
-                </ul>
+                {
+                    data.map((logement)=>( 
+                        <Card
+              cover={logement.cover}
+              title={logement.title}
+              id={logement.id}
+            />
+
+                    ))
+                }
             </div>
         </div>
     );

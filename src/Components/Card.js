@@ -1,19 +1,14 @@
-import React, { useState } from "react";
-import Collapse from './Collapse';
-import "../Styles/Components/_card.scss";
+import "../Styles/Components/_card.scss"
 
-
-const Card = ({ logement }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
+function Card({ cover, title , id }) {
     return (
-        <ul className="card">
-            <Collapse>
-                <li>Description {logement.description}</li>
-                <li>Équipements : {logement.equipments.join(', ')}</li>
-            </Collapse>
-        </ul>
-    );
-};
-
-export default Card;
+      <article key={id}>
+        <div class="image-container">
+          <img src={cover} alt={title} />
+          <p>{title}</p>
+        </div>
+      </article>
+    )
+  }
+  
+  export default Card

@@ -1,26 +1,31 @@
 .Banner {
-    ul{
-        display: flex;
+    ul {
+      display: flex;
+      justify-content: end;
+     
+      padding-top: 0;
+      
+  list-style-type: none;
+ 
     }
-    a{
-        text-decoration: none;
+  
+    a {
+      text-decoration: none;
     }
-    li{
-        transition: 0.2s;
-        cursor: pointer;
-        
-
+  
+    li {
+     
+      cursor: pointer;
+      padding-right: 20px;
+      color: black;
+     
     }
-.nav-active{
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        right:50%;
-        transform: translatex (-50%);
-        -webkit-animation: anim 0.3s ease forwards;
-        
-        
-    }
-}
-}
+  
+   
+    
+  }
+  
+  
+ 
+  
+  

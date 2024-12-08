@@ -1,6 +1,10 @@
-@import "../settings";
-@import "../_Banner";
-@import "../_logements";
-@import "../card";
-@import "../logo";
+@import "../Pages/settings.scss";
+@import "../Components/Banner";
+
+@import "../Components/card";
+@import "../Components/logo";
+@import "../Components/_collapse";
+@import "../Components/_logements";
+@import "../Components/footer";
+@import "../Components/layout"
 

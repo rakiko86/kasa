@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
 import Logo from '../Components/Logo';
 import Footer from '../Components/Footer';
+import "../Styles/Components/error.scss";
 
 const Error = () => {
     return (
@@ -10,10 +11,10 @@ const Error = () => {
             <Logo/>
 
             <Banner />
-            <img src="/404.png" alt="error" />
+            <img className='404' src="/404.png" alt="error" />
             <p>Oops! La page que vous demandez n'existe pas.</p>
             {/* Utilisation de Link pour les redirections internes */}
-            <Link to="/">Retournez à la page d'Accueil</Link>
+            <Link to="/">Retournez à la page d'Accueil </Link>
             <Footer/>
         </div>
     );

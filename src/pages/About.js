@@ -1,23 +1,16 @@
 import React from 'react';
-import { aboutList } from '../assets/data/data/aboutData';
-import Logo from '../Components/Logo';
-import Banner from '../Components/Banner';
+import { aboutList } from '../assets/data/aboutData';
+
 import Footer from '../Components/Footer';
 import "../Styles/Pages/index.scss";
+import Header from '../Components/Header';
 
 
 const About = () => {
     return (
         <div className='about'>
-
-             <header className='Banner'>
-                <ul>
-                <li> <Logo/></li> 
-                <li> <Banner/></li>
-                </ul>
-               
-          
-                 </header>
+<Header/>
+             
                  
                  <img className='montagne' src='/montagne.png' alt='montagne' />
               

@@ -1,0 +1,41 @@
+.header {
+    ul {
+      display: flex;
+      justify-content: space-between;
+     
+      padding-top: 0;
+      
+  list-style-type: none;
+ 
+    }
+  
+    a {
+      text-decoration: none;
+      :hover{
+        text-decoration: underline;
+
+      }
+    }
+  
+    li {
+     
+      cursor: pointer;
+      padding-right: 20px;
+      color: black;
+      
+
+      
+      
+     
+    }
+  
+
+  
+   
+    
+  }
+  
+  
+ 
+  
+  

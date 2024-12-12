@@ -20,7 +20,6 @@ const Logements = () => {
         <div className='logement'>
             <div className='card-container'>
               
-                
                 {
                     data.map((logement)=>( 
                         <Card

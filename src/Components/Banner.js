@@ -12,10 +12,13 @@ const Banner = () => {
                 <NavLink to="/About"className={(nav)=>(nav.isActive ? "nav-active" : "")}>
                 <li>A Propos</li>
                 </NavLink>
-                
+    
+ 
                
                 
             </ul>
+             
+            
             
         </div>
     );

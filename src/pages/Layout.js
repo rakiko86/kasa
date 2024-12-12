@@ -6,19 +6,30 @@ import Footer from '../Components/Footer';
 import "../Styles/Pages/index.scss";
 
 
+
 const Layout = () => {
     return (
         <div className='layout'>
-            <div className='Banniere'>
-            <Logo/> 
-             <Banner/>
-   
-      
-            <h1>Chez vous, partout et ailleurs</h1>
-            </div>
+            <header className='Banner'>
+                <ul>
+                <li> <Logo/></li> 
+                <li> <Banner/></li>
+                </ul>
+               
+               
+                 </header>
+                 <body>
+ 
+                 <div className='background-img'>
+                   < h1>Chez vous, partout et ailleurs</h1>
+                 </div>
+            
+                <main className='logement'>
             <Logements/>
+            </main>
             <Footer/>
-        </div>
+            </body>
+        </div >
     );
 };
 

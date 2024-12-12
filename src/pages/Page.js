@@ -8,10 +8,7 @@ const Page = (Logements) => {
     return (
         <div>
             
-            <Banner/>
-            <Logements/>
-            <Caroussel/>
-            <Collapse/>
+            
 
             
 

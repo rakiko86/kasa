@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
 import Logo from '../Components/Logo';
 import Footer from '../Components/Footer';
-import "../Styles/Components/error.scss";
+import "../Styles/Components/_error.scss";
 
 const Error = () => {
     return (

@@ -1,0 +1,27 @@
+
+.error-img{
+    @include center;
+}
+
+  .error{
+display: flex;
+flex-direction: column;
+justify-content: center;
+  a{
+    @include center;
+    align-items: center;
+   padding-bottom: 60px;
+    color: $color3;
+    font-size: 14px;
+
+  }
+     span{
+      align-items: center;
+    @include center;
+    color: $mainColor;
+    font-size: 1.8rem;
+    padding:60px;
+
+    }
+    
+}

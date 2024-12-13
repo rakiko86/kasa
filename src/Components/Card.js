@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Components/_card.scss";
+import "../Styles/Pages/index.scss";
 
 const Card = ({ cover, title, id }) => (
   <article key={id}>

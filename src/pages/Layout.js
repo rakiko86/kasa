@@ -4,8 +4,7 @@ import React from 'react';
 import Logements from "../Components/Logements";
 import Footer from '../Components/Footer';
 import "../Styles/Pages/index.scss";
-import Header from '../Components/Header';import coteImage from '../../cote.png'
-
+import Header from '../Components/Header';
 
 
 const Layout = () => {

@@ -1,20 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Banner from '../Components/Banner';
-import Logo from '../Components/Logo';
 import Footer from '../Components/Footer';
-import "../Styles/Components/_error.scss";
+import Header from '../Components/Header';
+import "../Styles/Pages/index.scss";
+
 
 const Error = () => {
     return (
         <div>
-            <Logo/>
+           <Header/>
+           
+            <img className='error-img' src="/404.png" alt="error" />
+            <div className="error">
+            <span>Oops! La page que vous demandez n'existe pas.</span> <br/>
 
-            <Banner />
-            <img className='404' src="/404.png" alt="error" />
-            <p>Oops! La page que vous demandez n'existe pas.</p>
-            {/* Utilisation de Link pour les redirections internes */}
             <Link to="/">Retournez à la page d'Accueil </Link>
+            </div>
             <Footer/>
         </div>
     );

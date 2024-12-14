@@ -9,10 +9,10 @@ import Header from '../Components/Header';
 
 const Layout = () => {
     return (
-        <div className='layout'>
+        <article className='layout'>
          
             <Header/>
-                 <body>
+                
  
                  <div className='background-img'>
                    < h1>Chez vous, partout et ailleurs</h1>
@@ -23,8 +23,8 @@ const Layout = () => {
             <Logements/>
             </main>
             <Footer/>
-            </body>
-        </div >
+            
+        </article >
     );
 };
 

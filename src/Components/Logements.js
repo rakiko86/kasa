@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-import "../Styles/Components/_logements.scss"
+import "../Styles/Pages/index.scss"
 const Logements = () => {
     const [data, setData]= useState([]);
     useEffect(() => {
@@ -17,7 +17,7 @@ const Logements = () => {
     }, []);
     
     return (
-        <div className='logement'>
+      
             <div className='card-container'>
               
                 {
@@ -25,13 +25,13 @@ const Logements = () => {
                         <Card
               cover={logement.cover}
               title={logement.title}
-              id={logement.id}
+              key={logement.id}
             />
 
                     ))
                 }
             </div>
-        </div>
+        
     );
 };
 

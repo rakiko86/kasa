@@ -8,8 +8,7 @@
     margin: 0 auto;
     justify-content: center;
     @include verticalCenter;
-    background: $color4;
-    
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     
    }
    section{
@@ -35,6 +34,8 @@
          background-color: $mainColor;
          border-radius: 5px;
          color: $color1;
+         font-size: 1rem;
+         
          
         }
 

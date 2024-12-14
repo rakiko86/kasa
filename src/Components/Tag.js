@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Gallerie = () => {
+const Tag = ({logement.tags}) => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Gallerie = () => {
     );
 };
 
-export default Gallerie;
+export default Tag;

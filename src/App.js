@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Page from "./pages/Page";
+import logements from "./assets/data/loge.json";
 
 
 
@@ -14,7 +15,7 @@ const App = () => {
     <Route path="/" element={<Layout/>} />
     <Route path="/About" element={<About/>} />
     <Route path="*" element={<Error/>} />
-    <Route path="/logement/:id" element={<Page/>}/>
+    <Route path={logements.id} element={<Page/>}/>
    
     
   

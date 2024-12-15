@@ -1,8 +1,9 @@
 import React from 'react';
-
-const Tag = ({logement.tags}) => {
+import logement from '../assets/data/loge.json';
+const Tag = ({tags}) => {
     return (
-        <div>
+        <div className='Tags'>
+            <span>tags={logement.tags} </span>
             
         </div>
     );

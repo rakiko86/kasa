@@ -6,7 +6,7 @@ const Logements = () => {
     useEffect(() => {
         const fetchData = async () => {
             // Récupérer les données du fichier JSON
-            const response = await fetch('/src/Data/loge.json');
+            const response = await fetch('../assets/data/loge.json');
             const logementData = await response.json();
             
             // Utilisez les données récupérées ici

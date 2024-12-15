@@ -10,4 +10,12 @@
     height: 169px;
     font-size: 22px;
     padding-top: 40px;
+    @media (max-width:768px){
+      padding-bottom: 50px;
+      padding-top: 50px;
+     p{ padding-left:120px;
+    padding-right: 100px;}
+
+    }
+    
   }

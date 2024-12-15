@@ -12,7 +12,7 @@ const Error = () => {
            
             <img className='error-img' src="/404.png" alt="error" />
             <div className="error">
-            <span>Oops! La page que vous demandez n'existe pas.</span> <br/>
+            <span>Oups! La page que vous demandez n'existe pas.</span> <br/>
 
             <Link to="/">Retournez à la page d'Accueil </Link>
             </div>

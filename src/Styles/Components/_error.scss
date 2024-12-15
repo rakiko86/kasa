@@ -1,6 +1,10 @@
 
 .error-img{
     @include center;
+    @media(max-width:768px){
+      content: url("../../assets/img/erroresponsive.png");
+      @include verticalCenter;
+    }
 }
 
   .error{
@@ -21,7 +25,12 @@ justify-content: center;
     color: $mainColor;
     font-size: 1.8rem;
     padding:60px;
+    @media(max-width:768px){
+      font-size: 1rem;
+    padding:20px;
+    text-align: center;
+    }
 
     }
-    
+ 
 }

@@ -22,15 +22,16 @@
       cursor: pointer;
       padding-right: 20px;
       color: $color3;
-      
+ 
+    
 
-      
-      
-     
+  }
+
+  @media(max-width:768px){
+    li{
+      padding-right: 0;
     }
-  
-
-  
+  }
    
     
   }

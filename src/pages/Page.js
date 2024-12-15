@@ -19,7 +19,7 @@ const Page = () => {
 
     return (
         <div className="details-page">
-            <Caroussel images={logement.pictures} />
+            <Caroussel />
             <Tag tags={logement.tags} />
             <h2>{logement.title}</h2>
             <p>{logement.location}</p>

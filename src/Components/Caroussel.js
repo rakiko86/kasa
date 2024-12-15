@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import logements from "../assets/data/loge.json";
+import "../Styles/Pages/index.scss";
 
 const Caroussel = ({ logementId }) => { // Recevez le logementId comme prop
     const logement = logements.find((logement) => logement.id === logementId); // Récupérer le logement correspondant à l'id

@@ -1,8 +1,8 @@
 import React from 'react';
-
+import "../Styles/Pages/index.scss";
 const Tag = ({ logement }) => {
     const tags = logement.tags || [];
-    console.log("Tags dans le composant Tag : ", tags); 
+ 
 
     return (
         <div className='Tags'>

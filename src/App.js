@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Page from "./pages/Page";
-import logements from "./assets/data/loge.json";
+
 
 
 

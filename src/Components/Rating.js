@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt, faStar as faStarEmpty } from "@fortawesome/free-solid-svg-icons";
-
+import "../Styles/Pages/index.scss";
 const Rating = ({ rating }) => {
     // Générer un tableau d'étoiles
     const maxStars = 5; // Nombre total d'étoiles

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../Styles/Pages/index.scss";
 const Host = ({ host }) => {
     if (!host) {
         return <div>Aucun hôte disponible</div>;

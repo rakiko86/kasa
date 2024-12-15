@@ -5,6 +5,8 @@ import Error from "./Error";
 import Collapse from "../Components/Collapse";
 import Caroussel from "../Components/Caroussel";
 import Tag from "../Components/Tag";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 const Page = () => {
     const { id } = useParams();
@@ -19,6 +21,7 @@ const Page = () => {
 
     return (
         <div className="details-page">
+          <Header/>
             <Caroussel />
             <Tag tags={logement.tags} />
             <h2>{logement.title}</h2>
@@ -35,7 +38,9 @@ const Page = () => {
                     ))}
                 </ul>
             </Collapse>
+            <Footer/>
         </div>
+        
     );
 };
 

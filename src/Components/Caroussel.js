@@ -25,6 +25,7 @@ const Caroussel = ({ id }) => {
 
     return (
         <div className="caroussel">
+            
             <button onClick={prevSlide} aria-label="Image précédente" className="caroussel-button">
                 <FontAwesomeIcon icon={faChevronLeft} />
             </button>

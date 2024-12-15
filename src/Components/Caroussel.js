@@ -3,10 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import logements from "../assets/data/loge.json";
 
-
-const Caroussel = ({ id }) => {
-    // Récupérer le logement correspondant à l'id
-    const logement = logements.find((logement) => logement.id === id);
+const Caroussel = ({ logementId }) => { // Recevez le logementId comme prop
+    const logement = logements.find((logement) => logement.id === logementId); // Récupérer le logement correspondant à l'id
 
     const pictures = logement?.pictures || []; // Utilisez un tableau vide si les images n'existent pas
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +23,6 @@ const Caroussel = ({ id }) => {
 
     return (
         <div className="caroussel">
-            
             <button onClick={prevSlide} aria-label="Image précédente" className="caroussel-button">
                 <FontAwesomeIcon icon={faChevronLeft} />
             </button>

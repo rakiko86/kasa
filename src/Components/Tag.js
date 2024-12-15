@@ -1,10 +1,18 @@
 import React from 'react';
-import logement from '../assets/data/loge.json';
-const Tag = ({tags}) => {
+
+const Tag = ({ logement }) => {
+    const tags = logement.tags || [];
+    console.log("Tags dans le composant Tag : ", tags); 
+
     return (
         <div className='Tags'>
-            <span>tags={logement.tags} </span>
-            
+            {tags.length > 0 ? (
+                tags.map((tag, index) => (
+                    <span key={index} className='tag'>{tag}</span>
+                ))
+            ) : (
+                <span>Aucun tag disponible</span>
+            )}
         </div>
     );
 };

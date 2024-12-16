@@ -1,5 +1,7 @@
 import React from 'react';
 import { aboutList } from '../assets/data/aboutData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 import Footer from '../Components/Footer';
 import "../Styles/Pages/index.scss";
@@ -24,7 +26,7 @@ const About = () => {
           <details>
             <summary>
             {item.title}
-            
+            <FontAwesomeIcon icon={faChevronUp} className="chevron-icon" />
             </summary>
             {item.content}
             </details>

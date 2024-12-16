@@ -15,6 +15,12 @@
     
         .collapse-icon {
             margin-left: 10px;
+        color: $color1;
+                transition: transform 0.3s ease;
+            
+                &.open {
+                    transform: rotate(360deg); // Rotation pour un effet dynamique
+                }
             
         }
     }

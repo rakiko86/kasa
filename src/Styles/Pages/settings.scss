@@ -2,7 +2,7 @@
 
 $mainColor: rgba(229, 45, 45, 0.823) ;
 $color1: #f6f6f6;
-$color2: rgba(105, 97, 97, 0.21);
+$color2: rgba(184, 164, 164, 0.21);
 $color3: black;
 $color4:rgba(0, 0, 0, 0.5);
 *{
@@ -30,4 +30,17 @@ $color4:rgba(0, 0, 0, 0.5);
     display: block;
     margin: 0 auto;
 };
-
+@mixin dynamique{
+    &[open] .chevron-icon {
+        transform: rotate(180deg);
+      
+     }
+}
+@mixin chevron{
+    
+        margin-left: 10px;
+        color: $color1;
+        font-size: 14px;
+        transition: transform 0.3s ease, color 0.3s ease;
+     
+}

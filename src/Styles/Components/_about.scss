@@ -1,53 +1,62 @@
-.about{
+.about {
+  .montagne {
+     width: 90%;
+     border-radius: 20px;
+     height: 200px;
+     object-fit: cover;
+     margin: 0 auto;
+     justify-content: center;
+     display: flex;
+    
+  }
 
-   .montagne{
-    width: 90%;
-    border-radius: 20px;
-    height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-    justify-content: center;
-    @include verticalCenter;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  section {
+    padding: 50px;
+     margin: 0 auto;
+     width: 70%;
 
-    @media(max-width:768px){
-  height: 150px;
-  padding: 0;
-  
-}
-   }
-   section{
-      padding: 20px;
-      margin-left:10%;
-      margin-right: 10%;
-        margin-left:0;
-        margin-right:0;
-      }
-      div{
-         padding:10px;
-         box-sizing: border-box;
+     .about-item {
+        margin: 0 auto;
+        padding: 10px;
 
-         margin: 0 auto;
-         .about-item{
-          margin-left: 60px;
-          margin-right: 60px;
-         }
-       details{
-         padding: 5px;
-        
-         
-       }
-       summary{
-         padding:10px 75px;
-         background-color: $mainColor;
-         border-radius: 5px;
-         color: $color1;
-         font-size: 1rem;
-         
-         
+        details {
+           padding: 5px;
+
+           summary {
+              display: flex;
+              align-items: center;
+              justify-content: space-between; // Titre à gauche, icône à droite
+              padding: 10px 15px;
+              background-color: $mainColor;
+              border-radius: 5px;
+              color: $color1;
+              font-size: 1rem;
+              cursor: pointer;
+
+              .chevron-icon {
+                 margin-left: 10px;
+                 color: $color1;
+                 font-size: 14px;
+                 transition: transform 0.3s ease, color 0.3s ease;
+              }
+           }
+
+           &[open] .chevron-icon {
+              transform: rotate(180deg);
+            
+           }
         }
-
+     }
+ 
+    }
+    
+    @media(max-width: 768px) {
+      height: 150px;
+      padding: 0;
+      section {
+        width: 100%;
+        margin: 0 auto;
+        padding:0px;
       }
-      
    }
-;
+}

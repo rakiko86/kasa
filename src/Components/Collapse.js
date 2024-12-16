@@ -13,8 +13,7 @@ const Collapse = ({ title, children }) => {
     };
 
     return (
-        <div className="collapse">
-            {/* Barre du collapse avec le titre et la logique pour ouvrir/fermer */}
+        <article className="collapse">
             <div
                 className="collapse-header"
                 onClick={toggle}
@@ -23,20 +22,20 @@ const Collapse = ({ title, children }) => {
                 aria-expanded={isOpen}
                 aria-controls={`collapse-content-${title}`}
             >
-                <div>
+                <section>
                 <h2>{title}</h2>
                 <span className={`collapse-icon ${isOpen ? "open" : ""}`}>
                 <FontAwesomeIcon icon={isOpen ? faChevronDown : faChevronUp} />
                 </span>
+                </section>
             </div>
-            </div>
-            {/* Contenu conditionnel */}
+    
             {isOpen && (
                 <div className="collapse-content" id={`collapse-content-${title}`}>
                     {children}
                 </div>
             )}
-        </div>
+        </article>
     );
 };
 

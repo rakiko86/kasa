@@ -1,11 +1,9 @@
-.details-page{
-    h2{
-        color: $mainColor;
-    }
-   span {
-color: $mainColor;
-    }
-
-      
+.pageArticle{
+   margin:0 auto;
+   padding: 60px;
+   display: flex;
+   flex-direction: column;
+   width: auto;
         
-    }
+    
+}

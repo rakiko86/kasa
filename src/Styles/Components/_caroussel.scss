@@ -1,1 +1,42 @@
-.caroussel-image-container{}
+.caroussel {
+    display: flex;
+    align-items: center; // Centre verticalement les chevrons avec l'image
+    justify-content: space-between; // Chevrons à gauche et à droite
+    position: relative; // Nécessaire pour positionner les chevrons
+
+    .caroussel-button {
+        background: none;
+        border: none;
+        color: $color1; // Personnalisez selon vos besoins
+        font-size: 60px; // Taille des chevrons
+        cursor: pointer;
+        position: absolute;
+        top: 50%; // Aligne verticalement au milieu
+        transform: translateY(-50%);
+        z-index: 10; // S'assure que les chevrons sont au-dessus de l'image
+    }
+
+    .caroussel-button:first-of-type {
+        left: 20px; // Position à gauche
+    }
+
+    .caroussel-button:last-of-type {
+        right: 20px; // Position à droite
+    }
+
+    .caroussel-image-container {
+        flex: 1; // L'image occupe l'espace restant
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; // Cache tout débordement de l'image
+        max-width: 100%; // Ne dépasse pas la taille du conteneur
+    }
+
+    .caroussel-image-container img {
+        width: 100%; // Adapte l'image à la largeur du conteneur
+        height: 600px; // Adapte l'image à la hauteur du conteneur
+        object-fit: cover;
+        border-radius: 20px;;
+    }
+}

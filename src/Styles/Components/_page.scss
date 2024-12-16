@@ -4,20 +4,42 @@
    display: flex;
    flex-direction: column;
    width: auto;
-   
+   @media(max-width:768px){
+    display: flex;
+    flex-direction: column;
+   }
     h2{
         color:$mainColor;
         
     } 
    
-     
+     .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width:768px){
+            display: flex;
+            flex-wrap: wrap;;
+        }
+        
+        }
+     }
     .collapsePage{
+        @media(max-width:768px){
+            display: flex;
+            flex-direction: column;
+           }
         .ulCollapse{
         display: flex;
         justify-content: space-around;
         padding: 0;
         list-style-type: none; 
         gap: 60px;
+        @media(max-width:768px){
+            display: flex;
+            flex-direction: column;
+            li{width: 100%;}
+           }
         li{
            width: 50%;
         }
@@ -25,5 +47,6 @@
             list-style-type: none;
         }
        }
+    
     }
-}
+    

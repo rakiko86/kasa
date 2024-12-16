@@ -37,6 +37,9 @@
         width: 100%; // Adapte l'image à la largeur du conteneur
         height: 600px; // Adapte l'image à la hauteur du conteneur
         object-fit: cover;
-        border-radius: 20px;;
+        border-radius: 20px;
+        @media(max-width:768px){
+            height: 300px;
+        }
     }
 }

@@ -9,6 +9,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Host from "../Components/Host";
 import Rating from "../Components/Rating";
+import "../Styles/Pages/index.scss";
 const Page = () => {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === String(id));
@@ -22,18 +23,17 @@ const Page = () => {
       <article className="pageArticle">
         <Caroussel logementId={logement.id} />
         <section className="info">
-          
+          <div className="titleLocation">
           <h2>{logement.title}</h2>
           <span>{logement.location}</span>
-
-
-         
-       
+          </div>
+          <div className="rateHost">
           <Host host={logement.host} />
           <Rating rating={logement.rating} />
-          <Tag logement={logement} />
+          </div>
+          </section>
+          <Tag className="pageTag" logement={logement} />
        
-        </section>
         <section className="collapsePage">
           <ul className="ulCollapse">
             <li>

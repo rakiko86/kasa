@@ -22,8 +22,8 @@ const Collapse = ({ title, children }) => {
                 aria-expanded={isOpen}
                 aria-controls={`collapse-content-${title}`}
             >
-                <section>
-                <h2>{title}</h2>
+                <section className="collapse-part">
+                <h3>{title}</h3>
                 <span className={`collapse-icon ${isOpen ? "open" : ""}`}>
                 <FontAwesomeIcon icon={isOpen ? faChevronDown : faChevronUp} />
                 </span>

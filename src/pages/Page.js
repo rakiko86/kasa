@@ -28,7 +28,7 @@ const Page = () => {
           <Host host={logement.host} />
           <Rating rating={logement.rating} />
         </section>
-        <section>
+        <section className="collapsePage">
           <ul>
             <li>
               <Collapse title="Description">{logement.description}</Collapse>

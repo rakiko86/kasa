@@ -4,3 +4,7 @@
 &.empty{
     color: $color2;
 }}
+.rating{
+    display: flex;
+    justify-content: end;
+}

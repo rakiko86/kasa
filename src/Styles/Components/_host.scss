@@ -1,6 +1,23 @@
-.host-picture{
-    border-radius: 50%;
-}
-.host-name{
-    color: $mainColor;
+.host {
+    display: flex; /* Aligne l'image et le nom sur une seule ligne */
+    align-items: center; /* Centrage vertical de l'image et du texte */
+    gap: 10px; 
+    justify-content: end;
+    padding: 10px;/* Espace entre l'image et le nom */
+
+    .host-name {
+        color: $mainColor; /* Couleur du texte */
+        display: flex; /* Gère le prénom et le nom ensemble */
+        flex-direction: column; /* Place le prénom et le nom l'un sous l'autre */
+        text-align: right;
+        font-size: 14px; 
+        
+    }
+
+    .host-picture {
+        border-radius: 50%; /* Rend l'image ronde */
+        height: 90px; /* Taille de l'image */
+        width: 90px; /* Assure une image proportionnée */
+        object-fit: cover; /* Ajuste l'image pour qu'elle remplisse son conteneur */
+    }
 }

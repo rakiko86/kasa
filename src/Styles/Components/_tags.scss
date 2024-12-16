@@ -1,12 +1,12 @@
 .Tags {
     display: flex; // Aligne les tags sur une ligne
     flex-wrap: wrap; // Permet de passer à la ligne si nécessaire
-    gap: 10px; // Espace entre les tags (plus moderne que margin)
+    gap: 10px;
 }
 
 .tag {
     background-color: $mainColor; // Couleur de fond
-    color: $color1 important; // Couleur du texte
+    color: $color1; // Couleur du texte
     padding: 5px 10px; // Espacement intérieur
     border-radius: 15px; // Coins arrondis
     font-size: 14px;

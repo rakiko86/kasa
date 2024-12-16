@@ -21,23 +21,29 @@ const Page = () => {
       <Header />
       <article className="pageArticle">
         <Caroussel logementId={logement.id} />
-        <section>
+        <section className="info">
+          
           <h2>{logement.title}</h2>
           <span>{logement.location}</span>
-          <Tag logement={logement} />
+
+
+         
+       
           <Host host={logement.host} />
           <Rating rating={logement.rating} />
+          <Tag logement={logement} />
+       
         </section>
         <section className="collapsePage">
-          <ul>
+          <ul className="ulCollapse">
             <li>
               <Collapse title="Description">{logement.description}</Collapse>
             </li>
             <li>
               <Collapse title="Équipements">
-                <ul>
+                <ul className="ulEquipement">
                   {logement.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
+                    <li className="liEquipement" key={index}>{equipment}</li>
                   ))}
                 </ul>
               </Collapse>

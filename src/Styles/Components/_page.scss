@@ -4,9 +4,15 @@
    display: flex;
    flex-direction: column;
    width: auto;
+   
+    h2{
+        color:$mainColor;
         
+    } 
+   
+     
     .collapsePage{
-       ul{
+        .ulCollapse{
         display: flex;
         justify-content: space-around;
         padding: 0;
@@ -14,6 +20,9 @@
         gap: 60px;
         li{
            width: 50%;
+        }
+        .ulEquipement{
+            list-style-type: none;
         }
        }
     }

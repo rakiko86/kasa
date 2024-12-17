@@ -23,6 +23,10 @@
   }
 
   @media (max-width: 768px) {
+    ul{
+      display:flex;
+      flex-direction: row;
+    }
     li {
       padding-right: 0;
     }

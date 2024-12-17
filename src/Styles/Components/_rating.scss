@@ -9,9 +9,9 @@
 .rating {
     display: flex;
     justify-content: end;
-    font-size: x-large;
+    font-size: xx-large;
 
     @media (max-width: 768px) {
-        font-size: x-large;
+        font-size: large;
     }
 }

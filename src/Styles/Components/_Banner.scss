@@ -1,7 +1,10 @@
 .Banner {
     padding: 30px;
-    font-size: 20px;
-
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    ;
     .nav-active {
         text-decoration: underline;
         /* Soulignement pour le lien actif */

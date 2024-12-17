@@ -68,6 +68,10 @@
   }
 
   @media (max-width: 768px) {
+    .pageArticle {
+      padding: 30px;
+    }
+
     .collapsePage {
       display: flex;
       flex-direction: column;

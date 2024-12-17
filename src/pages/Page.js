@@ -23,21 +23,23 @@ const Page = () => {
       <Header />
       <article className="pageArticle">
         <Caroussel logementId={logement.id} />
-        
-        <section className="sectionInfo" id="info">
-          
+
+        <section className="sectionInfo">
           <div className="titleLocation">
-            <h2>{logement.title}</h2>
-            <span>{logement.location}</span>
+            <div className="info">
+              <h2>{logement.title}</h2>
+              <span>{logement.location}</span>
+            </div>
+            <Tag className="pageTag" logement={logement} />
           </div>
-
           <div className="rateHost">
-            <div><Host host={logement.host} /></div>
-            <span><Rating rating={logement.rating} /></span>
+            <div>
+              <Host host={logement.host} />
+            </div>
+            <span>
+              <Rating rating={logement.rating} />
+            </span>
           </div>
-      
-
-        <div className="tagResponsive"><Tag className="pageTag" logement={logement} /></div>
         </section>
         <section className="collapsePage">
           <ul className="ulCollapse">
@@ -48,7 +50,9 @@ const Page = () => {
               <Collapse title="Équipements">
                 <ul className="ulEquipement">
                   {logement.equipments.map((equipment, index) => (
-                    <li className="liEquipement" key={index}>{equipment}</li>
+                    <li className="liEquipement" key={index}>
+                      {equipment}
+                    </li>
                   ))}
                 </ul>
               </Collapse>

@@ -29,6 +29,9 @@ const Caroussel = ({ logementId }) => { // Recevez le logementId comme prop
             </button>
             <div className="caroussel-image-container">
                 <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+                <div className="caroussel-counter">
+                    {currentIndex + 1} / {pictures.length}
+                </div>
             </div>
             <button onClick={nextSlide} aria-label="Image suivante" className="caroussel-button">
                 <FontAwesomeIcon icon={faChevronRight} />

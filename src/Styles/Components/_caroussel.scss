@@ -15,7 +15,20 @@
         transform: translateY(-50%);
         z-index: 10; // S'assure que les chevrons sont au-dessus de l'image
     }
+    .caroussel-counter{ 
+        position: absolute;
+        bottom: 10px;
+        left:50%;
+       
+        color: $color1;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: none; 
+        padding: 5px 15px;
+        border-radius: 10px;
+        z-index: 5; /* Assure que le texte reste visible */
 
+    }
     .caroussel-button:first-of-type {
         left: 20px; // Position à gauche
     }
@@ -35,11 +48,20 @@
 
     .caroussel-image-container img {
         width: 100%; // Adapte l'image à la largeur du conteneur
-        height: 500px; // Adapte l'image à la hauteur du conteneur
+        height: 450px; // Adapte l'image à la hauteur du conteneur
         object-fit: cover;
         border-radius: 20px;
         @media(max-width:768px){
             height: 300px;
+          
+        }
+      
+    }
+    @media(max-width:768px){
+        .faChevron{
+            font-size: 30px;
+            transform: scale(1.2);
         }
     }
 }
+

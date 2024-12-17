@@ -7,56 +7,36 @@
      margin: 0 auto;
      justify-content: center;
      display: flex;
-    
+     
   }
 
   section {
-    padding: 50px;
+    
      margin: 0 auto;
-     width: 70%;
+     padding-left: 10%;
+     padding-right: 10% ;
+   
+     
 
      .about-item {
         margin: 0 auto;
         padding: 10px;
 
-        details {
-           padding: 5px;
-
-           summary {
-              display: flex;
-              align-items: center;
-              justify-content: space-between; // Titre à gauche, icône à droite
-              padding: 10px 15px;
-              background-color: $mainColor;
-              border-radius: 5px;
-              color: $color1;
-              font-size: 1rem;
-              cursor: pointer;
-
-              .chevron-icon {
-                 margin-left: 10px;
-                 color: $color1;
-                 font-size: 14px;
-                 transition: transform 0.3s ease, color 0.3s ease;
-              }
-           }
-
-           &[open] .chevron-icon {
-              transform: rotate(180deg);
-            
+      
            }
         }
      }
  
-    }
+    
     
     @media(max-width: 768px) {
-      height: 150px;
-      padding: 0;
+     
       section {
-        width: 100%;
+        
         margin: 0 auto;
         padding:0px;
+        padding-left: 0px;
+        padding-right: 0px;
       }
    }
-}
+

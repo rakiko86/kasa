@@ -1,15 +1,17 @@
-.star{
+.star {
     color: $mainColor;
 
-&.empty{
-    color: $color2;
-}}
-.rating{
+    &.empty {
+        color: $color2;
+    }
+}
+
+.rating {
     display: flex;
     justify-content: end;
-    font-size:x-large;
-    @media(max-width:768px){
-        font-size: small;
-    
+    font-size: x-large;
+
+    @media (max-width: 768px) {
+        font-size: x-large;
     }
 }

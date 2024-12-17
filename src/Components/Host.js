@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../Styles/Pages/index.scss";
 
 const Host = ({ host }) => {
@@ -11,15 +11,15 @@ const Host = ({ host }) => {
 
     return (
         <div className="host">
-            <span  className="host-name">
-            <p >{firstName}</p>
-            <p >{lastName}</p> 
-            </span> 
+            <span className="host-name">
+                <p>{firstName}</p>
+                <p>{lastName}</p>
+            </span>
             {host.picture && (
-                <img 
-                    src={host.picture} 
-                    alt={`Portrait de ${firstName} ${lastName}`} 
-                    className="host-picture" 
+                <img
+                    src={host.picture}
+                    alt={`Portrait de ${firstName} ${lastName}`}
+                    className="host-picture"
                 />
             )}
         </div>

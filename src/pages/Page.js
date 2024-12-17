@@ -13,7 +13,6 @@ import Rating from "../Components/Rating";
 const Page = () => {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === String(id));
-
   if (!logement) {
     return <Error />;
   }
@@ -23,7 +22,6 @@ const Page = () => {
       <Header />
       <article className="pageArticle">
         <Caroussel logementId={logement.id} />
-
         <section className="sectionInfo">
           <div className="titleLocation">
             <div className="info">
@@ -60,7 +58,6 @@ const Page = () => {
           </ul>
         </section>
       </article>
-
       <Footer />
     </div>
   );

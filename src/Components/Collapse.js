@@ -23,13 +23,13 @@ const Collapse = ({ title, children }) => {
                 aria-controls={`collapse-content-${title}`}
             >
                 <section className="collapse-part">
-                <h3>{title}</h3>
-                <span className={`collapse-icon ${isOpen ? "open" : ""}`}>
-                <FontAwesomeIcon icon={isOpen ? faChevronDown : faChevronUp} />
-                </span>
+                    <h3>{title}</h3>
+                    <span className={`collapse-icon ${isOpen ? "open" : ""}`}>
+                        <FontAwesomeIcon icon={isOpen ? faChevronDown : faChevronUp} />
+                    </span>
                 </section>
             </div>
-    
+
             {isOpen && (
                 <div className="collapse-content" id={`collapse-content-${title}`}>
                     {children}

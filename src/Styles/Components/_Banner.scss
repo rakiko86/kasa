@@ -1,15 +1,19 @@
 .Banner {
     padding: 30px;
     font-size: 20px;
+
     .nav-active {
-        text-decoration: underline; /* Soulignement pour le lien actif */
-       color: $color3;
+        text-decoration: underline;
+        /* Soulignement pour le lien actif */
+        color: $color3;
     }
-    @media(max-width:768px){
+
+    @media (max-width: 768px) {
         font-size: 10px;
         text-transform: uppercase;
         margin: 0;
-        li{
+
+        li {
             padding-left: 20px;
         }
     }

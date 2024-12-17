@@ -6,17 +6,17 @@ const Card = ({ cover, title, id }) => {
     const navigate = useNavigate();
 
     const handleCardClick = () => {
-        navigate(`/logement/${id}`);  // Utilisez des backticks ici
+        navigate(`/logement/${id}`); // Utilisez des backticks ici
     };
 
     return (
-        <article 
-            key={id} 
-            onClick={handleCardClick} 
-            className="card" 
-            role="button" 
-            tabIndex={0} 
-            onKeyPress={(e) => e.id === 'Enter' && handleCardClick()}
+        <article
+            key={id}
+            onClick={handleCardClick}
+            className="card"
+            role="button"
+            tabIndex={0}
+            onKeyPress={(e) => e.id === "Enter" && handleCardClick()}
         >
             <div className="image-container">
                 <img src={cover} alt={title} />

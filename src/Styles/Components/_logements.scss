@@ -1,5 +1,6 @@
-@import"../Pages/settings.scss";
-.card-container{
+@import "../Pages/settings.scss";
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 60px;
@@ -7,14 +8,13 @@
     background-color: $color2;
     border-radius: 20px;
     margin: 70px;
-  
-     @media (max-width: 768px) {
-        display:grid;
+
+    @media (max-width: 768px) {
+        display: grid;
         grid-template-columns: 1fr; // 1 colonne sur les petits écrans
         gap: 30px; // Réduction de l'espacement
         padding: 20px; // Moins de padding
         margin: 20px; // Réduction des marges
         background-color: white;
-        
     }
 }

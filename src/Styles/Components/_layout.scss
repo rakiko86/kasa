@@ -1,27 +1,23 @@
-.background-img{
-  background:
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-   url("../cote.png") no-repeat center /cover;
- 
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../cote.png") no-repeat center / cover;
+
   width: 90%;
   height: 200px;
   margin: 0 auto;
-  display: flex; 
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   border-radius: 20px;
   color: $color1;
-  
-  
 
-h1{
-  @include verticalCenter;
-  padding: 50px;
-  
-}
-@media(max-width:768px){
-  height: 150px;
-  padding: 0;
-  
-}
+  h1 {
+    @include verticalCenter;
+    padding: 50px;
+  }
+
+  @media (max-width: 768px) {
+    height: 150px;
+    padding: 0;
+  }
 }

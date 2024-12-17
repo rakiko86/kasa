@@ -8,7 +8,10 @@
     background-color: $mainColor; // Couleur de fond
     color: $color1; // Couleur du texte
     padding: 5px 10px; // Espacement intérieur
-    border-radius: 15px; // Coins arrondis
+    border-radius: 10px; // Coins arrondis
     font-size: 14px;
+    font-weight: 500;
     white-space: nowrap; // Empêche les mots de se couper
+    margin-bottom: 10px;
+    margin-top: 20px;
 }

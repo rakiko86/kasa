@@ -1,36 +1,36 @@
+.error-img {
+  @include center;
 
-.error-img{
-    @include center;
-    @media(max-width:768px){
-      content: url("../../assets/img/erroresponsive.png");
-      @include verticalCenter;
-    }
+  @media (max-width: 768px) {
+    content: url("../../assets/img/erroresponsive.png");
+    @include verticalCenter;
+  }
 }
 
-  .error{
-display: flex;
-flex-direction: column;
-justify-content: center;
-  a{
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
     @include center;
     align-items: center;
-   padding-bottom: 60px;
+    padding-bottom: 60px;
     color: $color3;
     font-size: 14px;
-
   }
-     span{
-      align-items: center;
+
+  span {
+    align-items: center;
     @include center;
     color: $mainColor;
     font-size: 1.8rem;
-    padding:60px;
-    @media(max-width:768px){
-      font-size: 1rem;
-    padding:20px;
-    text-align: center;
-    }
+    padding: 60px;
 
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 20px;
+      text-align: center;
     }
- 
+  }
 }

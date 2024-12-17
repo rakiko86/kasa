@@ -1,45 +1,36 @@
 .about {
-  .montagne {
-     width: 90%;
-     border-radius: 20px;
-     height: 200px;
-     object-fit: cover;
-     margin: 0 auto;
-     justify-content: center;
-     display: flex;
-     margin-bottom: 50px;
-  }
-
-  section {
-    
-     margin: 0 auto;
-     padding-left: 10%;
-     padding-right: 10% ;
-   
-   
-     
-
-     .about-item {
-        margin: 0 auto;
-        padding: 10px;
-
-      
-           }
-        }
-     }
- 
-    footer{
-      padding-top:40px;
-    }
-    
-    @media(max-width: 768px) {
-     
-      section {
-        
-        margin: 0 auto;
-        padding:50px;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+   .montagne {
+      width: 90%;
+      border-radius: 20px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 auto;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 50px;
    }
 
+   section {
+      margin: 0 auto;
+      padding-left: 10%;
+      padding-right: 10%;
+
+      .about-item {
+         margin: 0 auto;
+         padding: 10px;
+      }
+   }
+}
+
+footer {
+   padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+   section {
+      margin: 0 auto;
+      padding: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+}

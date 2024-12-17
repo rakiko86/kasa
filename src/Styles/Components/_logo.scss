@@ -2,15 +2,12 @@
     margin-left: 15%;
     width: 150px;
     height: auto;
+
     @media (max-width: 768px) {
-        content:url("../../assets/img/logoresponsive.png");
+        content: url("../../assets/img/logoresponsive.png");
         width: 100px;
         padding-left: 0;
         padding-top: 10px;
         margin-left: 0;
-        
-        
     }
-
-    
 }

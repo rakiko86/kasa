@@ -1,34 +1,36 @@
 .collapse {
     padding: 0;
     margin: 0;
+}
 
-    .collapse-part {
-        background-color: $mainColor;
-        border-radius: 10px;
-        padding: 0 10px; // Cela regroupe padding-left et padding-right
+.collapse-part {
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding: 0 10px; // Cela regroupe padding-left et padding-right
+    color: $color1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .collapse-icon {
+        margin-left: 10px;
         color: $color1;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        transition: transform 0.3s ease;
 
-        h3 {
-            font-size: 18px;
-        }
-
-        .collapse-icon {
-            margin-left: 10px;
-            color: $color1;
-            transition: transform 0.3s ease;
-
-            &.open {
-                transform: rotate(360deg); // Rotation pour un effet dynamique
-            }
+        &.open {
+            transform: rotate(360deg); // Rotation pour un effet dynamique
         }
     }
- // Utilisez l'interpolation de cette manière
- #collapse-content {
-    background-color: $color3;
-    padding: 10px;
 }
+
+// Utilisez l'interpolation de cette manière
+.collapse-content {
+    background-color: $color2;
+    padding-top: 20px;
+    padding-left: 10px;
 }

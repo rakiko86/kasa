@@ -8,4 +8,8 @@
     display: flex;
     justify-content: end;
     font-size:x-large;
+    @media(max-width:768px){
+        font-size: small;
+    
+    }
 }

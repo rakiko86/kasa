@@ -23,4 +23,8 @@
         width:70px; 
         object-fit: cover; 
     }
+    @media(max-width:768px){
+        display: flex;
+       
+    }
 }

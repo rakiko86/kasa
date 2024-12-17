@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import logements from "../assets/data/loge.json";
 import Error from "./Error";
 import Collapse from "../Components/Collapse";
-import Caroussel from "../Components/Caroussel"; 
+import Caroussel from "../Components/Caroussel";
 import Tag from "../Components/Tag";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Host from "../Components/Host";
 import Rating from "../Components/Rating";
-import "../Styles/Pages/index.scss";
+
 const Page = () => {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === String(id));
@@ -17,23 +17,28 @@ const Page = () => {
   if (!logement) {
     return <Error />;
   }
+
   return (
     <div className="details-page">
       <Header />
       <article className="pageArticle">
         <Caroussel logementId={logement.id} />
-        <section className="info">
+        
+        <section className="sectionInfo" id="info">
+          
           <div className="titleLocation">
-          <h2>{logement.title}</h2>
-          <span>{logement.location}</span>
+            <h2>{logement.title}</h2>
+            <span>{logement.location}</span>
           </div>
+
           <div className="rateHost">
-          <Host host={logement.host} />
-          <Rating rating={logement.rating} />
+            <div><Host host={logement.host} /></div>
+            <span><Rating rating={logement.rating} /></span>
           </div>
-          </section>
-          <Tag className="pageTag" logement={logement} />
-       
+      
+
+        <div className="tagResponsive"><Tag className="pageTag" logement={logement} /></div>
+        </section>
         <section className="collapsePage">
           <ul className="ulCollapse">
             <li>
@@ -50,7 +55,8 @@ const Page = () => {
             </li>
           </ul>
         </section>
-        </article>
+      </article>
+
       <Footer />
     </div>
   );

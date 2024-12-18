@@ -10,10 +10,12 @@
   flex-direction: column;
   height: 169px;
   font-size: 22px;
+  padding: 0;
   padding-top: 40px;
 
   @media (max-width: 768px) {
     p {
+      
       padding-left: 25%;
       padding-right: 25%;
     }

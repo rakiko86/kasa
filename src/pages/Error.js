@@ -14,7 +14,7 @@ const Error = () => {
             <div class="error">
   <span class="error-text">
     <span class="line1">Oups! La page que</span>
-    <span class="line2">vous demandez n'existe pas.</span>
+    <span class="line2"> vous demandez n'existe pas.</span>
   </span>
 </div>
 

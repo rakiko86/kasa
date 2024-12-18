@@ -16,7 +16,7 @@ const Caroussel = ({ logementId }) => {
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
+            prevIndex === pictures.length - 1 ? 1 : prevIndex + 1
         );
     };
 
@@ -32,6 +32,7 @@ const Caroussel = ({ logementId }) => {
 
     return (
         <div className="caroussel">
+             {pictures.length > 1 && (
             <button
                 onClick={prevSlide}
                 aria-label="Image précédente"
@@ -39,12 +40,17 @@ const Caroussel = ({ logementId }) => {
             >
                 <FontAwesomeIcon icon={faChevronLeft} />
             </button>
+             )
+
+             }
             <div className="caroussel-image-container">
                 <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
                 <div className="caroussel-counter">
                     {currentIndex + 1} / {pictures.length}
                 </div>
             </div>
+            {pictures.length > 1 && (
+                
             <button
                 onClick={nextSlide}
                 aria-label="Image suivante"
@@ -52,6 +58,9 @@ const Caroussel = ({ logementId }) => {
             >
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>
+            )
+
+            }
         </div>
     );
 };

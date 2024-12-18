@@ -15,8 +15,12 @@
   h1 {
     @include verticalCenter;
     padding: 50px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    z-index: 5;
+    @media (max-width: 768px){
+      font-size: 1.5rem;
+    }
   }
    @media (max-width: 1024px) {
     height: 150px;
@@ -30,7 +34,7 @@
     width:95% ;
     box-shadow: none;
     margin: auto;
-   
+  
   
   }
 }

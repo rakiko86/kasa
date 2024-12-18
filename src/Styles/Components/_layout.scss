@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../cote.png") no-repeat center / cover;
 
-  width: 90%;
+  width: 95%;
   height: 200px;
   margin: 0 auto;
   display: flex;
@@ -10,14 +10,23 @@
   align-items: center;
   border-radius: 20px;
   color: $color1;
+  box-shadow:0 5px 5px $color4;
 
   h1 {
     @include verticalCenter;
     padding: 50px;
   }
+   @media (max-width: 1024px) {
+    height: 150px;
+    padding: 20px;
+    width: 85%;;
+  }
 
   @media (max-width: 768px) {
     height: 150px;
     padding: 0;
+    width:95% ;
+    box-shadow: none;
+  
   }
 }

@@ -1,5 +1,5 @@
 .logo {
-    margin-left: 15%;
+    margin-left: 5px;
     width: 150px;
     height: auto;
     display: flex;
@@ -7,9 +7,9 @@
 
     @media (max-width: 768px) {
         content: url("../../assets/img/logoresponsive.png");
-        width: 150px;
+        width: 120px;
         padding-left: 0;
-        padding-top: 10px;
+    
         margin-left: 0;
 
     }

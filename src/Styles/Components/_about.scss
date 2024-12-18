@@ -1,4 +1,5 @@
 .about {
+
    .montagne {
       width: 90%;
       border-radius: 20px;
@@ -10,13 +11,13 @@
       margin-bottom: 50px;
    }
 
-   section {
+   .about-section {
       margin: 0 auto;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left:15%;
+      padding-right: 15%;
 
       .about-item {
-         margin: 0 auto;
+         margin: 0;
          padding: 10px;
       }
    }
@@ -24,13 +25,4 @@
 
 footer {
    padding-top: 40px;
-}
-
-@media (max-width: 768px) {
-   section {
-      margin: 0 auto;
-      padding: 50px;
-      padding-left: 0px;
-      padding-right: 0px;
-   }
 }

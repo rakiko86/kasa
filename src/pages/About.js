@@ -12,7 +12,7 @@ const About = () => {
 
       <img className="montagne" src="/montagne.png" alt="montagne" />
 
-      <section>
+      <section className="about-section">
         {aboutList.map((item, index) => (
           <div key={index} className="about-item">
             <Collapse title={item.title}>{item.content}</Collapse>

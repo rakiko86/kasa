@@ -7,14 +7,19 @@
     gap: 50px;
     background-color: $color2;
     border-radius: 20px;
-    margin: 70px;
+    margin: 40px;
 
     @media (max-width: 768px) {
         display: grid;
         grid-template-columns: 1fr; // 1 colonne sur les petits écrans
         gap: 30px; // Réduction de l'espacement
-        padding: 20px; // Moins de padding
-        margin: 20px; // Réduction des marges
-        background-color: white;
+        padding: 10px; // Moins de padding
+        margin-top: 10px; // Réduction des marges
+        background-color:$color5;
+        padding: 0;
+        padding-top: 30px;
+        margin: 10px;
+    
+       
     }
 }

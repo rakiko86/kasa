@@ -3,7 +3,7 @@ import "../Styles/Pages/index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Collapse = ({ title, children,}) => {
+const Collapse = ({title, children}) => {
     // État pour gérer l'ouverture/fermeture
     const [isOpen, setIsOpen] = useState(false);
 

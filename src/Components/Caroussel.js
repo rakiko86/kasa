@@ -8,15 +8,13 @@ import logements from "../assets/data/loge.json";
 import "../Styles/Pages/index.scss";
 
 const Caroussel = ({ logementId }) => {
-    // Recevez le logementId comme prop
-    const logement = logements.find((logement) => logement.id === logementId); // Récupérer le logement correspondant à l'id
-
-    const pictures = logement?.pictures || []; // Utilisez un tableau vide si les images n'existent pas
+    const logement = logements.find((logement) => logement.id === logementId);
+    const pictures = logement?.pictures || [];
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === pictures.length - 1 ? 1 : prevIndex + 1
+            prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
         );
     };
 
@@ -32,35 +30,32 @@ const Caroussel = ({ logementId }) => {
 
     return (
         <div className="caroussel">
-             {pictures.length > 1 && (
-            <button
-                onClick={prevSlide}
-                aria-label="Image précédente"
-                className="caroussel-button"
-            >
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-             )
-
-             }
+            {pictures.length > 1 && (
+                <button
+                    onClick={prevSlide}
+                    aria-label="Image précédente"
+                    className="caroussel-button"
+                >
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+            )}
             <div className="caroussel-image-container">
                 <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-                <div className="caroussel-counter">
-                    {currentIndex + 1} / {pictures.length}
-                </div>
+                {pictures.length > 1 && (
+                    <div className="caroussel-counter">
+                        {currentIndex + 1} / {pictures.length}
+                    </div>
+                )}
             </div>
             {pictures.length > 1 && (
-                
-            <button
-                onClick={nextSlide}
-                aria-label="Image suivante"
-                className="caroussel-button"
-            >
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-            )
-
-            }
+                <button
+                    onClick={nextSlide}
+                    aria-label="Image suivante"
+                    className="caroussel-button"
+                >
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            )}
         </div>
     );
 };

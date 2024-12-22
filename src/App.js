@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";
-import Page from "./pages/Page";
+import Details from "./pages/Details";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />} />
+          <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<Error />} />
-          <Route path="/Page/:id" element={<Page />} />
+          <Route path="/Details/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -9,13 +9,16 @@
         color: $mainColor;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         text-align: right;
         font-size: 14px;
         font-weight: bold;
         margin:0;
         padding: 0;
+        p {
+            margin: 5px 0; /* Ajustez cette valeur pour réduire ou augmenter l'espace */
+        }
     }
 
     .host-picture {

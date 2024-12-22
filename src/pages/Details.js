@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import Host from "../Components/Host";
 import Rating from "../Components/Rating";
 
-const Page = () => {
+const Details = () => {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === String(id));
   if (!logement) {
@@ -63,4 +63,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Details;

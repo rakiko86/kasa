@@ -16,23 +16,21 @@ article {
     height: 100%;
 
     img {
-      max-width: 100%;
-  height: calc(60vh - 50px);
-      object-fit: cover;
+      width: 100%; // Prend toute la largeur du conteneur
+      height: 60vh; // Hauteur constante pour toutes les images
+      object-fit: cover; // Garde les proportions tout en remplissant l'espace
       display: block;
       border-radius: calc(0.1rem + 1vw);
 
       @media (max-width: 1024px) {
-      
-        max-height: 200px;
+          height: 200px; // Uniformisation de la hauteur sur les écrans plus petits
+      }
 
-        
-      }
       @media (max-width: 768px) {
-        max-height: 500px;
-      
+          height: 400px; // Ajustez si nécessaire
+          width: 100%; // Gardez la largeur à 100%
       }
-    }
+  }
 
     p {
       display: flex;

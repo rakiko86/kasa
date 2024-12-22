@@ -1,5 +1,6 @@
 .star {
     color: $mainColor;
+    padding: 5px;
 
     &.empty {
         color: $color2;
@@ -9,9 +10,11 @@
 .rating {
     display: flex;
     justify-content: end;
-    font-size: xx-large;
-
+    font-size: 20px;
+    padding: 0px;
+    padding-top: 20px;
     @media (max-width: 768px) {
-        font-size: large;
+        font-size: 18px;
+        padding: 0;
     }
 }

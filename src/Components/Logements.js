@@ -23,7 +23,7 @@ const Logements = () => {
         <div className="card-container">
             {data.map((logement) => (
                 <Link
-                    to={`/page/${logement.id}`}
+                    to={`/Details/${logement.id}`}
                     key={logement.id}
                     className="card-link"
                 >
